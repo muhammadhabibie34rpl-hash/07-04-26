@@ -1,0 +1,30 @@
+/*mobile first -> 1 kolom 12 baris*/
+.container{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: repeat(12, 150px);
+    gap: 10px; 
+}
+
+.box{
+    border: 1px solid black;
+    backround-color:
+    lightgray;
+}
+/*tablet -> 2 kolom 6 baris*/
+@media only screen and (min-width: 768px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 150px);
+    }
+}
+/*laptop -> 4 kolom 3 baris*/
+@media only screen and (min-width: 1024px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 150px);
+    }
+}
+
+
+
